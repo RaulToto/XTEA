@@ -12,3 +12,14 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_label_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    ui->lineEdit->setText("hello");
+
+}
