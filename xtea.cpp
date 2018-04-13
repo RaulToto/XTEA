@@ -3,8 +3,6 @@
 #include <stdint.h>
 #include <string.h>
 using namespace std;
-
-
 unsigned int key[4]={0xFDA5,0xD54E,0xFC00,0xB55A}; // encryption key
 
 #define BLOCK_SIZE 8
