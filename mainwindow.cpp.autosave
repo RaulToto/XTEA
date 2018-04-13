@@ -22,5 +22,5 @@ void MainWindow::on_pushButton_clicked()
 {
     QString input;
     input=ui->textEdit->toPlainText();
-    ui->textEdit_2->setText(input);
+
 }
