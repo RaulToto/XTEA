@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>759</width>
-    <height>409</height>
+    <width>786</width>
+    <height>524</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -93,7 +93,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Resultado</string>
+     <string>Cifrado</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -109,13 +109,36 @@
      <string>Plain Text</string>
     </property>
    </widget>
+   <widget class="QTextEdit" name="textEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>641</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>350</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Descrifrado</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>759</width>
+     <width>786</width>
      <height>19</height>
     </rect>
    </property>

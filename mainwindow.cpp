@@ -41,6 +41,11 @@ void MainWindow::on_pushButton_clicked()
     ui->textEdit_2->setText(output);
 
 
+    StringCrypt(writable,len,false);
+
+    string out1(writable);
+    QString output1=QString::fromStdString(out1);
+    ui->textEdit_3->setText(output1);
 
 }
 
