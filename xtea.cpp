@@ -4,11 +4,9 @@
 #include <string.h>
 using namespace std;
 
-unsigned int key[4]={0xFDA5,0xD54E,0xFC00,0xB55A}; // encryption key
-
+//unsigned int key[4]={0xFDA5,0xD54E,0xFC00,0xB55A}; // encryption key
 //unsigned int key[4]={65676}; // encryption key
-
-#define BLOCK_SIZE 8
+#define BLOCK_SIZE 1024
 void xtea_encipher(unsigned int num_rounds, uint32_t v[2], uint32_t const key[4]) {
     unsigned int i;
     uint32_t v0=v[0], v1=v[1], sum=0, delta=0x9E3779B9;
@@ -32,7 +30,7 @@ void xtea_decipher(unsigned int num_rounds, uint32_t v[2], uint32_t const key[4]
     }
     v[0]=v0; v[1]=v1;
 }
-
+/*
 void FileCrypt(string filename,bool encrypt)
 {
   fstream file(filename.c_str(),ios::in | ios::out | ios::binary);
@@ -79,7 +77,7 @@ void FileCrypt(string filename,bool encrypt)
 void StringCrypt(char *inout,int len,bool encrypt)
 {
     cout << inout << endl;
-  for(int i=0;i<len/BLOCK_SIZE;i++)
+    for(int i=0;i<len/BLOCK_SIZE;i++)
     {
       if(encrypt)
           xtea_encipher(32,(uint32_t*)(inout+(i*BLOCK_SIZE)),key);
@@ -101,3 +99,4 @@ void StringCrypt(char *inout,int len,bool encrypt)
         memcpy(inout+offset,data,mod);
     }
 }
+*/
