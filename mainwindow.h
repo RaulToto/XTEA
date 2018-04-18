@@ -27,6 +27,8 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_widget_customContextMenuRequested(const QPoint &pos);
+
 private:
     Ui::MainWindow *ui;
 };
